@@ -1,10 +1,4 @@
 
-
-/* ===================================
-   ESTILO PROFESIONAL - SALA DE BELLEZA
-   MIRIAM OSORIO
-=================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +16,21 @@ body {
     line-height: 1.7;
 }
 
-/* ENCABEZADO */
+/* ENCABEZADO CON IMAGEN DE FONDO */
 
 header {
-    background: linear-gradient(135deg, #d94f83, #ed8db0, #f6b8ce);
+    background-image:
+        linear-gradient(
+            rgba(120, 35, 70, 0.25),
+            rgba(120, 35, 70, 0.25)
+        ),
+        url("portada.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
     color: white;
     text-align: center;
     padding: 105px 20px;
@@ -122,7 +127,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* SECCIONES GENERALES */
+/* SECCIONES */
 
 section {
     background: white;
@@ -427,7 +432,6 @@ footer h3 {
 /* TABLET */
 
 @media (max-width: 850px) {
-
     .contenedor-servicios {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -439,15 +443,15 @@ footer h3 {
     header h1 {
         font-size: 38px;
     }
-
 }
 
 /* CELULARES */
 
 @media (max-width: 600px) {
-
     header {
+        min-height: 400px;
         padding: 65px 18px;
+        background-position: center center;
     }
 
     header h1 {
@@ -535,3 +539,5 @@ footer h3 {
         padding: 30px 15px;
     }
 }
+
+ 
