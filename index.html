@@ -357,45 +357,40 @@
                 </div>
             </div>
     </div>
-
-    <div class="formulario-opinion">
-        <h3>Escribe tu opinión</h3>
-
-        <form id="formularioOpinion">
-
-            <label for="nombreOpinion">Tu nombre:</label>
-            <input type="text" id="nombreOpinion"
-            placeholder="Escribe tu nombre" required>
-
-            <label for="calificacion">Califica nuestro servicio:</label>
-            <select id="calificacion" required>
-                <option value="">Selecciona una calificación</option>
-                <option value="★★★★★">★★★★★ Excelente</option>
-                <option value="★★★★☆">★★★★☆ Muy bueno</option>
-                <option value="★★★☆☆">★★★☆☆ Bueno</option>
-                <option value="★★☆☆☆">★★☆☆☆ Regular</option>
-                <option value="★☆☆☆☆">★☆☆☆☆ Puede mejorar</option>
-            </select>
-
-            <label for="comentario">Tu opinión:</label>
-
-        <textarea id="comentario"
-       placeholder="Cuéntanos tu experiencia..."
-       rows="5" required>
-       </textarea>
-
-        <button type="submit">Publicar opinión</button>
-
-        </form>
-     </div>
-        </form>
+<html lang="es">
+<body>
+  <section id="opiniones">
+    <div class="contenedor-opiniones">
+      <!-- Aquí irían las opiniones generadas o mostradas -->
     </div>
+  </section>
 
-    <div id="listaOpiniones">
-        <h3>Opiniones compartidas</h3>
-    </div>
+  <div class="formulario-opinion">
+    <h3>Escribe tu opinión</h3>
+    
+    <form id="formularioopinion">
+      <label for="nombreopinion">Tu nombre:</label>
+      <input type="text" id="nombreopinion" placeholder="Escribe tu nombre" required>
 
-</section>
+      <label for="calificacion">Califica nuestro servicio:</label>
+      <select id="calificacion" required>
+        <option value="">Selecciona una calificación</option>
+        <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+        <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+        <option value="3">⭐⭐⭐ Bueno</option>
+        <option value="2">⭐⭐ Regular</option>
+        <option value="1">⭐ Puede mejorar</option>
+      </select>
 
+      <label for="comentario">Tu opinión:</label>
+      <textarea id="comentario" placeholder="Cuéntanos tu experiencia..." rows="5" required></textarea>
+
+      <button type="submit">Publicar opinión</button>
+    </form>
+  </div>
 </body>
 </html>
+
+  </body>
+</html>
+       
