@@ -327,12 +327,26 @@
 
             </form>
         </section>
-        <section id="opiniones">
-            <h2>Opiniones de Nuestros Clientes</h2>
-            <p>Tu opinión nos ayuda a mejorar nuestro servicio.</p>
+    
+<section id="opiniones">
+    <p class="etiqueta">TU OPINIÓN CUENTA</p>
+    <h2>Opiniones de Nuestros Clientes</h2>
 
-            <div class="contenedor-opiniones">
-                <div class="opinion">
+    <p class="descripcion">
+        Tu experiencia es importante para nosotros.
+        Comparte tu opinión sobre nuestros servicios.
+    </p>
+
+    <div class="contenedor-opiniones">
+
+        <div class="opinion">
+            <h3>¡Queremos escucharte!</h3>
+            <p>
+                Cuéntanos cómo fue tu experiencia
+                en Sala de Belleza Miriam Osorio.
+            </p>
+        </div>
+  <div class="opinion">
                     <h3>Comparte tu experiencia</h3>
                     <p>Nos encantará conocer tu opinión sobre nuestros servicios.</p>
                 </div>
@@ -342,6 +356,46 @@
                     <p>Trabajamos para brindarte atención y cuidado de calidad.</p>
                 </div>
             </div>
-        </section>
+    </div>
+
+    <div class="formulario-opinion">
+        <h3>Escribe tu opinión</h3>
+
+        <form id="formularioOpinion">
+
+            <label for="nombreOpinion">Tu nombre:</label>
+            <input type="text" id="nombreOpinion"
+            placeholder="Escribe tu nombre" required>
+
+            <label for="calificacion">Califica nuestro servicio:</label>
+            <select id="calificacion" required>
+                <option value="">Selecciona una calificación</option>
+                <option value="★★★★★">★★★★★ Excelente</option>
+                <option value="★★★★☆">★★★★☆ Muy bueno</option>
+                <option value="★★★☆☆">★★★☆☆ Bueno</option>
+                <option value="★★☆☆☆">★★☆☆☆ Regular</option>
+                <option value="★☆☆☆☆">★☆☆☆☆ Puede mejorar</option>
+            </select>
+
+            <label for="comentario">Tu opinión:</label>
+
+        <textarea id="comentario"
+       placeholder="Cuéntanos tu experiencia..."
+       rows="5" required>
+       </textarea>
+
+        <button type="submit">Publicar opinión</button>
+
+        </form>
+     </div>
+        </form>
+    </div>
+
+    <div id="listaOpiniones">
+        <h3>Opiniones compartidas</h3>
+    </div>
+
+</section>
+
 </body>
 </html>
