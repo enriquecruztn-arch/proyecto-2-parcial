@@ -104,52 +104,27 @@
             </div>
         </section>
 
-        <section id="galeria">
-            <h2>Galería de Belleza</h2>
+       <section id="galeria">
 
-            <p>
-                Aquí puedes conocer algunos de nuestros trabajos
-                y ver los resultados de nuestros servicios.
-            </p>
+    <h2>Galería de Belleza</h2>
 
-            <div class="galeria">
+    <p>
+        Aquí puedes conocer algunos de nuestros trabajos
+        y ver los resultados de nuestros servicios.
+    </p>
 
-<<<<<<< HEAD
-                <img
-                    src="WhatsApp Image 2026-11-04 at 8.30.23 PM.jpeg"
-                    alt="Diseño de uñas"
-                >
+    <div class="carrusel">
 
-                <img
-                    src="WhatsApp Image 2026-11-04 at 8.36.17 PM.jpeg"
-                    alt="Cuidado de belleza"
-                >
+        <button class="boton" onclick="anterior()">❮</button>
 
-                <img
-                    src="cejas.jpeg"
-                    alt="Maquillaje"
-                >
+        <img id="fotoCarrusel" src="maquillaje.jpeg"
+             alt="Trabajo de belleza">
 
-                <img
-                    src="uñas.jpeg"
-                    alt="Productos de belleza"
-                >
-=======
-                <img src="WhatsApp Image 2026-11-04 at 8.44.51 PM.jpeg"
-                     alt="Diseño de uñas">
+        <button class="boton" onclick="siguiente()">❯</button>
 
-                <img src="WhatsApp Image 2026-11-04 at 8.47.20 PM.jpeg"
-                     alt="Trabajo de belleza">
+    </div>
 
-                <img src="WhatsApp Image 2026-11-04 at 8.36.17 PM.jpeg"
-                     alt="Maquillaje">
-
-                <img src="WhatsApp Image 2026-11-04 at 8.50.32 PM.jpeg"
-                     alt="Productos de belleza">
->>>>>>> 21069698b563ce4d5447edde411370feffde3305
-
-            </div>
-        </section>
+</section>
 
         <section id="ubicacion">
             <h2>¿Dónde nos encontramos?</h2>
@@ -391,7 +366,38 @@
         <p>Tu belleza es nuestra inspiración.</p>
         <p>© 2026 Todos los derechos reservados.</p>
     </footer>
+<script>
 
+    let fotos = [
+        "maquillaje.jpeg",
+        "cejas.jpeg",
+        "pestañas.jpeg",
+        "uñas.jpeg"
+    ];
+
+    let actual = 0;
+
+    function siguiente() {
+        actual++;
+
+        if (actual >= fotos.length) {
+            actual = 0;
+        }
+
+        document.getElementById("fotoCarrusel").src = fotos[actual];
+    }
+
+    function anterior() {
+        actual--;
+
+        if (actual < 0) {
+            actual = fotos.length - 1;
+        }
+
+        document.getElementById("fotoCarrusel").src = fotos[actual];
+    }
+
+</script>
 </body>
 </html>
        
