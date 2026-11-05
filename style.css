@@ -20,8 +20,8 @@ body {
 header {
     background-image:
         linear-gradient(
-            rgba(120, 35, 70, 0.25),
-            rgba(120, 35, 70, 0.25)
+            rgba(190, 65, 112, 0.45),
+            rgba(190, 65, 112, 0.45)
         ),
         url("portada.jpeg");
 
@@ -36,6 +36,7 @@ header {
     position: relative;
     overflow: hidden;
 }
+
 
 header h1 {
     font-size: 48px;
