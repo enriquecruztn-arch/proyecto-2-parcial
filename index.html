@@ -302,28 +302,29 @@
                         para ofrecerte una mejor atención.
                     </p>
                 </div>
-
             </div>
+        </section>
+<section id="opinion">
+    <h2>Escribe tu opinión</h2>
+    <p class="subtitulo-opinion">Tu satisfacción es importante. Queremos saber tu experiencia para ofrecerte la mejor atención.</p>
+    
+    <form class="form-opinion" onsubmit="event.preventDefault();">
+        <div class="campo">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required>
+        </div>
 
-            <div class="formulario-opinion">
-
-                <h3>Escribe tu opinión</h3>
-
-                <form id="formularioopinion">
-
-                    <label for="nombreopinion">Tu nombre:</label>
-                    <input type="text" id="nombreopinion"
-                           placeholder="Escribe tu nombre" required>
-
-                    <label for="calificacion">Califica nuestro servicio:</label>
-
-                    <select id="calificacion" required>
-                        <option value="">Selecciona una calificación</option>
-                        <option value="5">5 - Excelente</option>
-                        <option value="4">4 - Muy bueno</option>
-                        <option value="3">3 - Bueno</option>
-                        <option value="2">2 - Regular</option>
-                        <option value="1">1 - Puede mejorar</option>
+        <div class="campo">
+            <label for="calificacion">Califica nuestro servicio:</label>
+            <select id="calificacion" name="calificacion" required>
+                <option value="" disabled selected>Selecciona una calificación</option>
+                <option value="5">⭐⭐⭐⭐⭐ Excelente (5 estrellas)</option>
+                <option value="4">⭐⭐⭐⭐ Muy bueno (4 estrellas)</option>
+                <option value="3">⭐⭐⭐ Bueno (3 estrellas)</option>
+                <option value="2">⭐⭐ Regular (2 estrellas)</option>
+                <option value="1">⭐ Malo (1 estrella)</option>
+            </select>
+        </div>
                     </select>
 
                     <label for="comentario">Tu opinión:</label>
