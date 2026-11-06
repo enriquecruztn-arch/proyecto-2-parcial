@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -584,4 +583,18 @@ footer h3 {
         gap: 8px;
     }
 }
- 
+/* --- ESTILOS PARA LA IMAGEN DEL MAPA --- */
+#ubicacion img {
+    display: block;
+    margin: 25px auto;
+    max-width: 220px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ubicacion img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
