@@ -364,7 +364,19 @@ tr:hover {
 .opinion:hover {
     transform: translateY(-7px);
     box-shadow: 0 10px 25px rgba(198, 78, 126, 0.15);
+
 }
+
+
+.contenedor-opiniones .opinion:nth-child(3)
+{
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 450px;
+    max-width: 500px;
+}
+
+
 
 /* CONTACTO */
 
